@@ -4,6 +4,9 @@ function randomGem() {
 return gem;
 }
 
+function randomNumber (min, max) {
+  return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
 
 //Win / Lose Conditions
 function winLose(gemSum, rand) {
@@ -39,7 +42,7 @@ function winLose(gemSum, rand) {
 
 function reset(){
   //Reset Variables
-  rand = Math.floor(Math.random() * 120 +1);
+  rand = randomNumber(19,120);
   gem1 = randomGem();
   gem2 = randomGem();
   gem3 = randomGem();
@@ -64,7 +67,7 @@ function reset(){
 //Page Load Variables
 var data = reset();
 
-var rand = data.rand;
+var rand = randomNumber(19,120);
 var gem1 = data.gem1;
 var gem2 = data.gem2;
 var gem3 = data.gem3;
@@ -83,10 +86,6 @@ var loses = 0;
 
 // :::: VARIABLES:::::
 $(document).ready(function(){
-
-  
-
-  
 
   $("#gem1").on("click", function() {
     gemSum = gemSum + gem1;
