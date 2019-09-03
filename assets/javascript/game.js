@@ -79,7 +79,7 @@ var loses = 0;
 
 //document.getElementById('randomNumber').textContent = rand;
   //document.getElementById('wins').textContent = wins;
-  $("wins").text(wins);
+  $("#wins").text(wins);
   $("#loses").text(loses);
   $("#total").text ( "Gem Guess Number " + gemSum);
 
