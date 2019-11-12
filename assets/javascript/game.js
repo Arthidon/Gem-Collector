@@ -58,7 +58,7 @@ function reset(){
   console.log("GemSum " + gemSum);
 
   $("#randomNumber").text ( "Number to hit: " + rand);
-  $("#total").text ( "Gem Guess Number " + gemSum);
+  $("#total").text ( "Total Guess Number " + gemSum);
   
   return  { rand : rand, gem1 : gem1 , gem2 : gem2, gem3 : gem3, gem4 : gem4, gemSum : gemSum };
 
